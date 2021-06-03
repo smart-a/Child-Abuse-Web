@@ -1,0 +1,28 @@
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\bin\ChildAbuse.dll.config
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\bin\ChildAbuse.dll
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\bin\ChildAbuse.pdb
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\bin\Wisej.Framework.dll
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\bin\Wisej.Framework.xml
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\bin\de\Wisej.Framework.resources.dll
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\bin\fr\Wisej.Framework.resources.dll
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\bin\it\Wisej.Framework.resources.dll
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\bin\pt\Wisej.Framework.resources.dll
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\bin\tr\Wisej.Framework.resources.dll
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.csproj.AssemblyReference.cache
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.LadingPage.resources
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.csproj.GenerateResource.cache
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.csproj.CoreCompileInputs.cache
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.csproj.CopyComplete
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.dll
+C:\Users\004SFT\source\repos\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.pdb
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.csproj.AssemblyReference.cache
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.Admin.AdminLogin.resources
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.Admin.Dashboard.AddIncident.resources
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.Admin.Dashboard.AdminDashboard.resources
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.Components.ThreadCard.resources
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.LadingPage.resources
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.Properties.Resources.resources
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.csproj.GenerateResource.cache
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.csproj.CoreCompileInputs.cache
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.dll
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.pdb
