@@ -73,6 +73,16 @@ namespace ChildAbuse.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Curprit {
+            get {
+                object obj = ResourceManager.GetObject("Curprit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap nigeria_police_logo {
             get {
                 object obj = ResourceManager.GetObject("nigeria police logo", resourceCulture);

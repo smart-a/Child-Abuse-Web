@@ -38,6 +38,8 @@ namespace ChildAbuse.Admin.Dashboard
             this.upload1 = new Wisej.Web.Upload();
             this.pbVictimImage = new Wisej.Web.PictureBox();
             this.panel3 = new Wisej.Web.Panel();
+            this.panel8 = new Wisej.Web.Panel();
+            this.txtDescription = new Wisej.Web.TextBox();
             this.panel5 = new Wisej.Web.Panel();
             this.dtpCrimeDate = new Wisej.Web.DateTimePicker();
             this.panel4 = new Wisej.Web.Panel();
@@ -53,15 +55,20 @@ namespace ChildAbuse.Admin.Dashboard
             this.pbCurpritImage = new Wisej.Web.PictureBox();
             this.btnSave = new Wisej.Web.Button();
             this.btnReset = new Wisej.Web.Button();
+            this.panel9 = new Wisej.Web.Panel();
+            this.panel10 = new Wisej.Web.Panel();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbVictimImage)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCurpritImage)).BeginInit();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,7 +81,7 @@ namespace ChildAbuse.Admin.Dashboard
             this.panel1.Controls.Add(this.pbVictimImage);
             this.panel1.Font = new System.Drawing.Font("default", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.panel1.HeaderBackColor = System.Drawing.Color.FromArgb(0, 0, 51);
-            this.panel1.Location = new System.Drawing.Point(25, 203);
+            this.panel1.Location = new System.Drawing.Point(22, 361);
             this.panel1.Name = "panel1";
             this.panel1.ShowCloseButton = false;
             this.panel1.ShowHeader = true;
@@ -125,7 +132,7 @@ namespace ChildAbuse.Admin.Dashboard
             // txtVictimName
             // 
             this.txtVictimName.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtVictimName.LabelText = "Victim Fullame";
+            this.txtVictimName.LabelText = "Victim Fullname";
             this.txtVictimName.Location = new System.Drawing.Point(33, 11);
             this.txtVictimName.Name = "txtVictimName";
             this.txtVictimName.Padding = new Wisej.Web.Padding(5);
@@ -146,26 +153,57 @@ namespace ChildAbuse.Admin.Dashboard
             // pbVictimImage
             // 
             this.pbVictimImage.BorderStyle = Wisej.Web.BorderStyle.Solid;
+            this.pbVictimImage.ImageSource = "(none)";
             this.pbVictimImage.Location = new System.Drawing.Point(485, 11);
             this.pbVictimImage.Name = "pbVictimImage";
             this.pbVictimImage.Size = new System.Drawing.Size(123, 111);
+            this.pbVictimImage.SizeMode = Wisej.Web.PictureBoxSizeMode.StretchImage;
             // 
             // panel3
             // 
             this.panel3.BorderStyle = Wisej.Web.BorderStyle.Solid;
+            this.panel3.Controls.Add(this.panel8);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.txtCrimeLocation);
             this.panel3.Font = new System.Drawing.Font("default", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.panel3.HeaderBackColor = System.Drawing.Color.FromArgb(0, 0, 51);
-            this.panel3.Location = new System.Drawing.Point(25, 21);
+            this.panel3.Location = new System.Drawing.Point(22, 26);
             this.panel3.Name = "panel3";
             this.panel3.ShowCloseButton = false;
             this.panel3.ShowHeader = true;
-            this.panel3.Size = new System.Drawing.Size(649, 176);
+            this.panel3.Size = new System.Drawing.Size(649, 328);
             this.panel3.TabIndex = 1;
             this.panel3.TabStop = true;
             this.panel3.Text = "Incident Details";
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.txtDescription);
+            this.panel8.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.panel8.HeaderBackColor = System.Drawing.Color.Transparent;
+            this.panel8.HeaderForeColor = System.Drawing.Color.FromArgb(0, 0, 0);
+            this.panel8.Location = new System.Drawing.Point(32, 144);
+            this.panel8.Name = "panel8";
+            this.panel8.ShowCloseButton = false;
+            this.panel8.ShowHeader = true;
+            this.panel8.Size = new System.Drawing.Size(576, 137);
+            this.panel8.TabIndex = 22;
+            this.panel8.TabStop = true;
+            this.panel8.Text = "Incident Description";
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.AutoSize = false;
+            this.txtDescription.Dock = Wisej.Web.DockStyle.Fill;
+            this.txtDescription.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDescription.Location = new System.Drawing.Point(0, 0);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Padding = new Wisej.Web.Padding(5);
+            this.txtDescription.Size = new System.Drawing.Size(576, 109);
+            this.txtDescription.TabIndex = 21;
+            this.txtDescription.Watermark = "Enter in‌cident description";
             // 
             // panel5
             // 
@@ -213,7 +251,7 @@ namespace ChildAbuse.Admin.Dashboard
             // 
             this.cbCrimeCategory.AutoSize = false;
             this.cbCrimeCategory.CssStyle = "padding: 10px;";
-            this.cbCrimeCategory.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.cbCrimeCategory.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.cbCrimeCategory.Items.AddRange(new object[] {
             ((object)(resources.GetObject("cbCrimeCategory.Items")))});
             this.cbCrimeCategory.Location = new System.Drawing.Point(8, 4);
@@ -224,12 +262,12 @@ namespace ChildAbuse.Admin.Dashboard
             // 
             // txtCrimeLocation
             // 
-            this.txtCrimeLocation.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCrimeLocation.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCrimeLocation.LabelText = "Crime Location";
             this.txtCrimeLocation.Location = new System.Drawing.Point(33, 84);
             this.txtCrimeLocation.Name = "txtCrimeLocation";
             this.txtCrimeLocation.Padding = new Wisej.Web.Padding(5);
-            this.txtCrimeLocation.Size = new System.Drawing.Size(578, 52);
+            this.txtCrimeLocation.Size = new System.Drawing.Size(578, 54);
             this.txtCrimeLocation.TabIndex = 15;
             this.txtCrimeLocation.Watermark = "Enter location details";
             // 
@@ -244,7 +282,7 @@ namespace ChildAbuse.Admin.Dashboard
             this.panel2.Controls.Add(this.pbCurpritImage);
             this.panel2.Font = new System.Drawing.Font("default", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.panel2.HeaderBackColor = System.Drawing.Color.FromArgb(0, 0, 51);
-            this.panel2.Location = new System.Drawing.Point(25, 409);
+            this.panel2.Location = new System.Drawing.Point(22, 567);
             this.panel2.Name = "panel2";
             this.panel2.ShowCloseButton = false;
             this.panel2.ShowHeader = true;
@@ -306,7 +344,7 @@ namespace ChildAbuse.Admin.Dashboard
             // txtCurpritName
             // 
             this.txtCurpritName.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtCurpritName.LabelText = "Curprit Fullame";
+            this.txtCurpritName.LabelText = "Curprit Fullname";
             this.txtCurpritName.Location = new System.Drawing.Point(33, 11);
             this.txtCurpritName.Name = "txtCurpritName";
             this.txtCurpritName.Padding = new Wisej.Web.Padding(5);
@@ -330,13 +368,15 @@ namespace ChildAbuse.Admin.Dashboard
             this.pbCurpritImage.Location = new System.Drawing.Point(485, 11);
             this.pbCurpritImage.Name = "pbCurpritImage";
             this.pbCurpritImage.Size = new System.Drawing.Size(123, 111);
+            this.pbCurpritImage.SizeMode = Wisej.Web.PictureBoxSizeMode.StretchImage;
             // 
             // btnSave
             // 
+            this.btnSave.Anchor = Wisej.Web.AnchorStyles.Right;
             this.btnSave.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/hand-o-up.svg";
-            this.btnSave.Location = new System.Drawing.Point(510, 691);
+            this.btnSave.Location = new System.Drawing.Point(482, 3);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(164, 36);
             this.btnSave.TabIndex = 3;
@@ -347,10 +387,11 @@ namespace ChildAbuse.Admin.Dashboard
             // 
             // btnReset
             // 
+            this.btnReset.Anchor = Wisej.Web.AnchorStyles.Left;
             this.btnReset.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReset.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/times-circle-o.svg";
-            this.btnReset.Location = new System.Drawing.Point(25, 691);
+            this.btnReset.Location = new System.Drawing.Point(2, 3);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(164, 36);
             this.btnReset.TabIndex = 4;
@@ -359,16 +400,36 @@ namespace ChildAbuse.Admin.Dashboard
             this.btnReset.TextImageRelation = Wisej.Web.TextImageRelation.TextBeforeImage;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
+            // panel9
+            // 
+            this.panel9.AutoScroll = true;
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Controls.Add(this.panel2);
+            this.panel9.Controls.Add(this.panel1);
+            this.panel9.Controls.Add(this.panel3);
+            this.panel9.Dock = Wisej.Web.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(698, 929);
+            this.panel9.TabIndex = 5;
+            this.panel9.TabStop = true;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.btnReset);
+            this.panel10.Controls.Add(this.btnSave);
+            this.panel10.Location = new System.Drawing.Point(22, 843);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(648, 76);
+            this.panel10.TabIndex = 5;
+            this.panel10.TabStop = true;
+            // 
             // AddIncident
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 753);
-            this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(698, 929);
+            this.Controls.Add(this.panel9);
             this.FormBorderStyle = Wisej.Web.FormBorderStyle.Fixed;
             this.HeaderBackColor = System.Drawing.Color.FromArgb(0, 0, 51);
             this.MaximizeBox = false;
@@ -383,12 +444,15 @@ namespace ChildAbuse.Admin.Dashboard
             ((System.ComponentModel.ISupportInitialize)(this.pbVictimImage)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel8.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbCurpritImage)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -418,5 +482,9 @@ namespace ChildAbuse.Admin.Dashboard
         private Wisej.Web.PictureBox pbCurpritImage;
         private Wisej.Web.Button btnSave;
         private Wisej.Web.Button btnReset;
+        private Wisej.Web.Panel panel8;
+        private Wisej.Web.TextBox txtDescription;
+        private Wisej.Web.Panel panel9;
+        private Wisej.Web.Panel panel10;
     }
 }

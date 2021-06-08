@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ChildAbuse.Data.ApplicationDbContext-Web.config Connection String" description="ChildAbuse.Data.ApplicationDbContext Connection String used in web.config by the application to access the database." defaultValue="ChildAbuse.Data.ApplicationDbContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\004SFT\\Desktop\\Adesoye\ Abeeb\\Projects\\Child\ Abuse\\ChildAbuse\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ChildAbuse.Data.ApplicationDbContext']/@connectionString" />
+  </parameter>
+</parameters>

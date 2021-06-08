@@ -43,6 +43,8 @@ namespace ChildAbuse.Admin
 
         private void HandleProceed()
         {
+            panelMsg.Visible = false;
+
             if (txtUsername.Text == "")
             {
                 txtUsername.Focus();

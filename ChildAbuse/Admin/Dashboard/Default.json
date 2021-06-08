@@ -40,5 +40,5 @@
 {
 	"url": "Default.html",
 	"showLoader": false,
-	"startup": "ChildAbuse.Program.Main, ChildAbuse"
+	"startup": "ChildAbuse.Program.AdminDashboard, ChildAbuse"
 }

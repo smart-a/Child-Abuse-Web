@@ -1,4 +1,5 @@
-﻿using ChildAbuse.Model;
+﻿using ChildAbuse.Data;
+using ChildAbuse.Model;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using System;
@@ -37,6 +38,15 @@ namespace ChildAbuse.Helper
             var tokenString = handler.ReadJwtToken(token);
             var u = tokenString.Payload.First().Value.ToString();
             return JsonConvert.DeserializeObject<UsersAccount>(u);
+        }
+    }
+
+    public class Auth
+    {
+        static ApplicationDbContext _context = new ApplicationDbContext();
+        public static UsersAccount ValidateAdmin(UsersAccount usersAccount)
+        {
+            return _context.UsersAccounts.SingleOrDefault((u) => u.Id == usersAccount.Id);
         }
     }
 }

@@ -25,7 +25,7 @@ namespace ChildAbuse.Model
     {
         public Guid Id { set; get; }
         public string Category { set; get; }
-        public DateTime? Date { set; get; }
+        public string Date { set; get; }
         public string CrimeLocation { set; get; }
         public string CrimeDescription { set; get; }
 

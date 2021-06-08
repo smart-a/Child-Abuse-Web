@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ChildAbuse.Admin;
+using ChildAbuse.Admin.Dashboard;
+using ChildAbuse.Helper;
+using System;
 using Wisej.Web;
 
 namespace ChildAbuse
@@ -21,5 +24,41 @@ namespace ChildAbuse
         //static void Main(NameValueCollection args)
         //{
         //}
+
+        static void Admin()
+        {
+            Application.Browser.LocalStorage.GetValue("child_abuse_admin", (string token) =>
+            {
+                if (token != null)
+                {
+                    var admin = Auth.ValidateAdmin(JwtToken.DecodeAdminToken(token));
+                    if (admin != null)
+                    {
+                        Application.Navigate("/Admin/Dashboard");
+                        return;
+                    }
+                }
+            });
+            AdminLogin window = new AdminLogin();
+            window.Show();
+        }
+
+        static void AdminDashboard()
+        {
+            Application.Browser.LocalStorage.GetValue("child_abuse_admin", (string token) =>
+            {
+                if (token != null)
+                {
+                    var admin = Auth.ValidateAdmin(JwtToken.DecodeAdminToken(token));
+                    if (admin != null)
+                    {
+                        AdminDashboard window = new AdminDashboard();
+                        window.Show();
+                        return;
+                    }
+                }
+                Application.Navigate("/Admin");
+            });
+        }
     }
 }

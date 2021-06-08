@@ -30,10 +30,10 @@ namespace ChildAbuse.Admin.Dashboard
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
-            Wisej.Web.ComponentTool componentTool3 = new Wisej.Web.ComponentTool();
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle7 = new Wisej.Web.DataGridViewCellStyle();
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle8 = new Wisej.Web.DataGridViewCellStyle();
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle9 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.ComponentTool componentTool1 = new Wisej.Web.ComponentTool();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle1 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle2 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle3 = new Wisej.Web.DataGridViewCellStyle();
             this.panel1 = new Wisej.Web.Panel();
             this.panel2 = new Wisej.Web.Panel();
             this.btnUser = new Wisej.Web.Button();
@@ -95,6 +95,7 @@ namespace ChildAbuse.Admin.Dashboard
             this.btnUser.Size = new System.Drawing.Size(45, 39);
             this.btnUser.TabIndex = 10;
             this.btnUser.TextImageRelation = Wisej.Web.TextImageRelation.TextBeforeImage;
+            this.btnUser.ItemClicked += new Wisej.Web.MenuButtonItemClickedEventHandler(this.btnUser_ItemClicked);
             // 
             // menuItem1
             // 
@@ -106,7 +107,6 @@ namespace ChildAbuse.Admin.Dashboard
             // 
             // menuLogout
             // 
-            this.menuLogout.AllowHtml = true;
             this.menuLogout.IconSource = "resource.wx/Wisej.Ext.FontAwesome/reply.svg";
             this.menuLogout.Index = 1;
             this.menuLogout.Name = "menuLogout";
@@ -114,14 +114,14 @@ namespace ChildAbuse.Admin.Dashboard
             // 
             // label2
             // 
-            this.label2.Anchor = Wisej.Web.AnchorStyles.None;
+            this.label2.Anchor = Wisej.Web.AnchorStyles.Left;
             this.label2.Font = new System.Drawing.Font("default", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            this.label2.Location = new System.Drawing.Point(93, 52);
+            this.label2.Location = new System.Drawing.Point(75, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 18);
+            this.label2.Size = new System.Drawing.Size(225, 18);
             this.label2.TabIndex = 1;
-            this.label2.Text = "CHILD ABUSE BLOG";
+            this.label2.Text = "CHILD ABUSE PORTAL";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBox1
@@ -163,9 +163,9 @@ namespace ChildAbuse.Admin.Dashboard
             this.txtSearch.Padding = new Wisej.Web.Padding(5);
             this.txtSearch.Size = new System.Drawing.Size(260, 30);
             this.txtSearch.TabIndex = 14;
-            componentTool3.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/search.svg";
+            componentTool1.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/search.svg";
             this.txtSearch.Tools.AddRange(new Wisej.Web.ComponentTool[] {
-            componentTool3});
+            componentTool1});
             this.txtSearch.Watermark = "Incident category or Victim name";
             this.txtSearch.KeyPress += new Wisej.Web.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
@@ -187,20 +187,24 @@ namespace ChildAbuse.Admin.Dashboard
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridView1.AutoSizeColumnsMode = Wisej.Web.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeRowsMode = Wisej.Web.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(41, 101);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dataGridView1.ResponsiveProfiles"))));
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(44, 84, 77);
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Size = new System.Drawing.Size(712, 428);
             this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.RowHeaderMouseClick += new Wisej.Web.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
             // AdminDashboard
             // 
@@ -214,6 +218,7 @@ namespace ChildAbuse.Admin.Dashboard
             this.StartPosition = Wisej.Web.FormStartPosition.CenterScreen;
             this.Text = "AdminDashboard";
             this.WindowState = Wisej.Web.FormWindowState.Maximized;
+            this.Appear += new System.EventHandler(this.AdminDashboard_Appear);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
