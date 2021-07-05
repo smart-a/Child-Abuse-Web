@@ -50,6 +50,41 @@ namespace ChildAbuse.Admin.Dashboard
             deleteImages(incidentList);
         }
 
+        public void LoadWhistleBlower()
+        {
+            _context = new ApplicationDbContext();
+            var blowerList = _context.WhistleBlowers.OrderByDescending((i) => i.BlowDate).ToList();
+            var blowers = blowerList.Select((i) =>
+                 new WhistleBlowerString
+                 {
+                     Id = i.Id,
+                     WhatHappend = i.What,
+                     When = i.When,
+                     Where = i.Where,
+                     WhoInvolved = i.Who,
+                     WhistleBlowerContact = i.Contact,
+                     SubmittedOn = i.BlowDate.ToString("ddd dd MMM, yyyy")
+                 }).ToList();
+
+            dataGridView2.DataSource = blowers;
+            dataGridView2.Columns["Id"].Visible = false;
+            dataGridView2.Columns["WhatHappend"].HeaderText = "What Happend";
+            dataGridView2.Columns["WhatHappend"].MaximumWidth = 350;
+            dataGridView2.Columns["WhatHappend"].AutoEllipsis = true;
+            dataGridView2.Columns["When"].MaximumWidth = 350;
+            dataGridView2.Columns["When"].AutoEllipsis = true;
+            dataGridView2.Columns["WhoInvolved"].HeaderText = "Who Involved";
+            dataGridView2.Columns["WhoInvolved"].MaximumWidth = 350;
+            dataGridView2.Columns["WhoInvolved"].AutoEllipsis = true;
+            dataGridView2.Columns["Where"].MaximumWidth = 350;
+            dataGridView2.Columns["Where"].AutoEllipsis = true;
+            dataGridView2.Columns["WhistleBlowerContact"].HeaderText = "WhistleBlower Contact";
+            dataGridView2.Columns["WhistleBlowerContact"].MaximumWidth = 350;
+            dataGridView2.Columns["WhistleBlowerContact"].AutoEllipsis = true;
+            dataGridView2.Columns["SubmittedOn"].HeaderText = "Submitted On";
+
+        }
+
         private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
         {
             var search = txtSearch.Text;
@@ -81,6 +116,7 @@ namespace ChildAbuse.Admin.Dashboard
         private void AdminDashboard_Appear(object sender, EventArgs e)
         {
             LoadIncidents();
+            LoadWhistleBlower();
         }
 
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -128,6 +164,17 @@ namespace ChildAbuse.Admin.Dashboard
 
                 }
                 LoadIncidents();
+            }
+        }
+
+        private void dataGridView2_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            var index = Guid.Parse(dataGridView2.CurrentRow[0].Value.ToString());
+            var currentBlower = _context.WhistleBlowers.SingleOrDefault((i) => i.Id == index);
+            if (currentBlower != null)
+            {
+                WhistleDetails details = new WhistleDetails(currentBlower);
+                details.ShowDialog();
             }
         }
 

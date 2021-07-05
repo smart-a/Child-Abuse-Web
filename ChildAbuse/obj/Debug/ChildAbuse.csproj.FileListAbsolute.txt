@@ -52,3 +52,6 @@ C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\bin\Microsoft.IdentityModel.Logging.dll
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\bin\Microsoft.IdentityModel.Logging.xml
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.Admin.Dashboard.ActionDialog.resources
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.Admin.Dashboard.WhistleDetails.resources
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.Components.WhistleBlowerForm.resources
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Debug\ChildAbuse.csproj.AssemblyReference.cache

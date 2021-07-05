@@ -30,9 +30,10 @@ namespace ChildAbuse
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Wisej.Web.ComponentTool componentTool5 = new Wisej.Web.ComponentTool();
+            Wisej.Web.ComponentTool componentTool1 = new Wisej.Web.ComponentTool();
             this.panel1 = new Wisej.Web.Panel();
             this.panel2 = new Wisej.Web.Panel();
+            this.btnWhisltle = new Wisej.Web.Button();
             this.label2 = new Wisej.Web.Label();
             this.pictureBox1 = new Wisej.Web.PictureBox();
             this.panel3 = new Wisej.Web.Panel();
@@ -40,10 +41,10 @@ namespace ChildAbuse
             this.panel4 = new Wisej.Web.Panel();
             this.panel5 = new Wisej.Web.Panel();
             this.panel7 = new Wisej.Web.Panel();
+            this.tableLayoutPanelpost = new Wisej.Web.TableLayoutPanel();
             this.panel6 = new Wisej.Web.Panel();
             this.txtSearch = new Wisej.Web.TextBox();
             this.timer1 = new Wisej.Web.Timer(this.components);
-            this.tableLayoutPanelpost = new Wisej.Web.TableLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,6 +66,7 @@ namespace ChildAbuse
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnWhisltle);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = Wisej.Web.DockStyle.Top;
@@ -73,6 +75,21 @@ namespace ChildAbuse
             this.panel2.Size = new System.Drawing.Size(900, 81);
             this.panel2.TabIndex = 0;
             this.panel2.TabStop = true;
+            // 
+            // btnWhisltle
+            // 
+            this.btnWhisltle.Anchor = Wisej.Web.AnchorStyles.Right;
+            this.btnWhisltle.BackColor = System.Drawing.Color.Transparent;
+            this.btnWhisltle.BorderStyle = Wisej.Web.BorderStyle.None;
+            this.btnWhisltle.Cursor = Wisej.Web.Cursors.Hand;
+            this.btnWhisltle.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnWhisltle.ForeColor = System.Drawing.Color.FromArgb(11, 93, 171);
+            this.btnWhisltle.Location = new System.Drawing.Point(755, 31);
+            this.btnWhisltle.Name = "btnWhisltle";
+            this.btnWhisltle.Size = new System.Drawing.Size(121, 22);
+            this.btnWhisltle.TabIndex = 3;
+            this.btnWhisltle.Text = "Whisltle Blower";
+            this.btnWhisltle.Click += new System.EventHandler(this.btnWhisltle_Click);
             // 
             // label2
             // 
@@ -150,6 +167,22 @@ namespace ChildAbuse
             this.panel7.TabIndex = 17;
             this.panel7.TabStop = true;
             // 
+            // tableLayoutPanelpost
+            // 
+            this.tableLayoutPanelpost.Anchor = Wisej.Web.AnchorStyles.Top;
+            this.tableLayoutPanelpost.AutoSize = true;
+            this.tableLayoutPanelpost.ColumnCount = 1;
+            this.tableLayoutPanelpost.ColumnStyles.Add(new Wisej.Web.ColumnStyle(Wisej.Web.SizeType.Percent, 50F));
+            this.tableLayoutPanelpost.Location = new System.Drawing.Point(25, 23);
+            this.tableLayoutPanelpost.Name = "tableLayoutPanelpost";
+            this.tableLayoutPanelpost.Padding = new Wisej.Web.Padding(10, 20, 10, 20);
+            this.tableLayoutPanelpost.RowCount = 1;
+            this.tableLayoutPanelpost.RowStyles.Add(new Wisej.Web.RowStyle(Wisej.Web.SizeType.Percent, 50F));
+            this.tableLayoutPanelpost.ShowCloseButton = false;
+            this.tableLayoutPanelpost.Size = new System.Drawing.Size(852, 554);
+            this.tableLayoutPanelpost.TabIndex = 5;
+            this.tableLayoutPanelpost.TabStop = true;
+            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.txtSearch);
@@ -169,9 +202,9 @@ namespace ChildAbuse
             this.txtSearch.Padding = new Wisej.Web.Padding(5);
             this.txtSearch.Size = new System.Drawing.Size(260, 30);
             this.txtSearch.TabIndex = 15;
-            componentTool5.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/search.svg";
+            componentTool1.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/search.svg";
             this.txtSearch.Tools.AddRange(new Wisej.Web.ComponentTool[] {
-            componentTool5});
+            componentTool1});
             this.txtSearch.Watermark = "Incident category or Victim name";
             this.txtSearch.KeyPress += new Wisej.Web.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
@@ -180,22 +213,6 @@ namespace ChildAbuse
             this.timer1.Enabled = true;
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // tableLayoutPanelpost
-            // 
-            this.tableLayoutPanelpost.Anchor = Wisej.Web.AnchorStyles.Top;
-            this.tableLayoutPanelpost.AutoSize = true;
-            this.tableLayoutPanelpost.ColumnCount = 1;
-            this.tableLayoutPanelpost.ColumnStyles.Add(new Wisej.Web.ColumnStyle(Wisej.Web.SizeType.Percent, 50F));
-            this.tableLayoutPanelpost.Location = new System.Drawing.Point(25, 23);
-            this.tableLayoutPanelpost.Name = "tableLayoutPanelpost";
-            this.tableLayoutPanelpost.Padding = new Wisej.Web.Padding(10, 20, 10, 20);
-            this.tableLayoutPanelpost.RowCount = 1;
-            this.tableLayoutPanelpost.RowStyles.Add(new Wisej.Web.RowStyle(Wisej.Web.SizeType.Percent, 50F));
-            this.tableLayoutPanelpost.ShowCloseButton = false;
-            this.tableLayoutPanelpost.Size = new System.Drawing.Size(852, 554);
-            this.tableLayoutPanelpost.TabIndex = 5;
-            this.tableLayoutPanelpost.TabStop = true;
             // 
             // LadingPage
             // 
@@ -241,6 +258,7 @@ namespace ChildAbuse
         private Wisej.Web.Panel panel6;
         private Wisej.Web.Timer timer1;
         private Wisej.Web.TableLayoutPanel tableLayoutPanelpost;
+        private Wisej.Web.Button btnWhisltle;
     }
 }
 

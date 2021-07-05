@@ -36,3 +36,5 @@ C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Releas
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Release\ChildAbuse.csproj.CopyComplete
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Release\ChildAbuse.dll
 C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Release\ChildAbuse.pdb
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Release\ChildAbuse.Admin.Dashboard.WhistleDetails.resources
+C:\Users\004SFT\Desktop\Adesoye Abeeb\Projects\Child Abuse\ChildAbuse\obj\Release\ChildAbuse.Components.WhistleBlowerForm.resources

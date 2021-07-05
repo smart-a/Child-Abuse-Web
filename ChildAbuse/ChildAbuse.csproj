@@ -90,11 +90,23 @@
     <Compile Include="Admin\Dashboard\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Dashboard\WhistleDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard\WhistleDetails.Designer.cs">
+      <DependentUpon>WhistleDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\ThreadCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Components\ThreadCard.Designer.cs">
       <DependentUpon>ThreadCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\WhistleBlowerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\WhistleBlowerForm.Designer.cs">
+      <DependentUpon>WhistleBlowerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\ApplicationDbContext.cs" />
     <Compile Include="Helper\HelperMethods.cs" />
@@ -104,6 +116,7 @@
     <Compile Include="LadingPage.Designer.cs">
       <DependentUpon>LadingPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\WhistleBlower.cs" />
     <Compile Include="Model\Curprit.cs" />
     <Compile Include="Model\Incident.cs" />
     <Compile Include="Model\UsersAccount.cs" />
@@ -166,8 +179,14 @@
     <EmbeddedResource Include="Admin\Dashboard\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Dashboard\WhistleDetails.resx">
+      <DependentUpon>WhistleDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\ThreadCard.resx">
       <DependentUpon>ThreadCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\WhistleBlowerForm.resx">
+      <DependentUpon>WhistleBlowerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LadingPage.resx">
       <DependentUpon>LadingPage.cs</DependentUpon>

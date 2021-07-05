@@ -96,5 +96,11 @@ namespace ChildAbuse
                 lblMarquee.Left = maxX;
             }
         }
+
+        private void btnWhisltle_Click(object sender, EventArgs e)
+        {
+            WhistleBlowerForm whistleBlower = new WhistleBlowerForm();
+            whistleBlower.ShowDialog();
+        }
     }
 }

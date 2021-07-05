@@ -12,7 +12,7 @@ namespace ChildAbuse.Data
 #if DEBUG
         public ApplicationDbContext()
         : base("Server=(localdb)\\mssqllocaldb;Database=child_abuse;Trusted_Connection=True;MultipleActiveResultSets=true")
-        {
+        { //v11.0
             var ad = this.UsersAccounts.Count();
             if (ad < 1)
             {
@@ -37,5 +37,6 @@ namespace ChildAbuse.Data
         public DbSet<Incident> Incidents { set; get; }
         public DbSet<Victim> Victims { set; get; }
         public DbSet<Curprit> Curprits { set; get; }
+        public DbSet<WhistleBlower> WhistleBlowers { set; get; }
     }
 }
